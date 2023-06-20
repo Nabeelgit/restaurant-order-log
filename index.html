@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="fill-available">
+        <div style="width: 144.828px"><h3 style="margin: 0">Completed: <span id="completed-num">0</span></h3></div>
+        <div>
+            <h1 style="margin: 0">Orders</h1>
+        </div>
+        <div>
+            <button class="classic-btn" id="add-order-btn">Add order</button>
+        </div>
+    </header>
+    <div class="add-order no-display">
+        <form id="add-order-form">
+            <label for="table-num">Table:</label>
+            <input placeholder="Table number..." id="table-num" type="number">
+            <label style="display: block; margin-top: 1rem" for="item-list">Items:</label>
+            <div class="items">
+                <input placeholder="Item name..." class="item fill-available" type="text" id="item-list">
+            </div>
+            <span class="order-error"></span>
+            <button class="classic-btn add-item-btn">Add item</button>
+            <br>
+            <div style="display: flex; flex-direction: column">
+                <button class="bright-btn green-btn place-order-btn" id="place-btn">Place order</button>
+                <button class="bright-btn red-btn cancel-order-btn" id="cancel-btn">Cancel</button>
+            </div>
+        </form>     
+    </div>
+    <div class="container"></div>
+</body>
+</html>

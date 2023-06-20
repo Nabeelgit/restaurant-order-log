@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+.red-btn {
+  background-color: #aa1313;
+  border: 1px solid #aa1313;
+}
+.green-btn {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+}
+.bright-btn {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bright-btn:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .bright-btn {
+    padding: 10px 30px;
+  }
+}
+.classic-btn {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: system-ui,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.classic-btn:hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+}
+
+.classic-btn:active {
+  outline: 0;
+}
+
+.classic-btn:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .classic-btn {
+    height: 48px;
+  }
+}
+.fill-available {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+.no-display {
+  display: none;
+}
+svg {
+  fill: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+#completed-num:hover {
+  color: rgb(68, 255, 47);
+  cursor: default;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25rem);
+}
+.add-order {
+  background-color: black;
+  position: absolute;
+  left: 38%;
+  top: 28%;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  max-width: 320.547px;
+}
+.add-order input {
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-size: 1.3rem;
+}
+.add-order .item {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.add-order .order-error {
+  display: block;
+  color: red;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.add-order .add-item-btn {
+  margin-top: 1rem;
+  width: 5rem;
+  font-size: 1rem;
+  height: 2rem;
+}
+.add-order .place-order-btn {
+  margin-top: 1rem;
+}
+.order {
+  border: 1px solid white;
+  max-width: 25rem;
+  height: 23rem;
+}
+.order .top {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid white;
+}
+.order .top svg {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.done-btn svg:hover {
+  fill: rgb(1, 179, 1);
+}
+.close-btn svg:hover {
+  fill: rgb(219, 3, 3);
+}
+.order .content {
+  overflow-y: auto;
+  max-height: 18.4rem;
+}
